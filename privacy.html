@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidade — This Is A Spoon</title>
+  <style>
+    :root {
+      --bg: #0d0d14;
+      --surface: #13131f;
+      --border: #2a2a3d;
+      --text: #e0e0f0;
+      --muted: #8888aa;
+      --accent: #a259ff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      padding: 2rem 1rem 4rem;
+    }
+    .container { max-width: 680px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 3rem; }
+    header h1 { font-size: 1.8rem; color: var(--accent); margin-bottom: 0.25rem; }
+    header p { color: var(--muted); font-size: 0.875rem; }
+    h2 {
+      font-size: 1.1rem;
+      color: var(--accent);
+      margin: 2rem 0 0.75rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    p, li { color: var(--text); margin-bottom: 0.75rem; }
+    ul { padding-left: 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    a { color: var(--accent); }
+    .chip {
+      display: inline-block;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 0.2rem 0.75rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+    footer {
+      margin-top: 4rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🥄 This Is A Spoon</h1>
+      <p>Política de Privacidade &amp; Termos de Uso</p>
+    </header>
+
+    <div class="chip">Última atualização: julho de 2026</div>
+
+    <p>
+      Bem-vindo a <strong>This Is A Spoon</strong> ("o App"), desenvolvido por <strong>Garagem</strong>
+      ("nós", "nosso"). Esta Política de Privacidade explica como coletamos, usamos e protegemos suas
+      informações quando você usa o App. Ao criar uma conta, você concorda com os termos abaixo.
+    </p>
+
+    <h2>1. Informações que coletamos</h2>
+    <ul>
+      <li>
+        <strong>Dados de conta:</strong> nome de exibição e endereço de e-mail fornecidos pelo
+        Google ou Apple no momento do login social. Não armazenamos sua senha — a autenticação é
+        gerenciada pelo provedor de login.
+      </li>
+      <li>
+        <strong>Fotos capturadas pelo App:</strong> quando você fotografa um objeto para criar um
+        personagem, a imagem é enviada temporariamente para a API da OpenAI (veja seção 3) e para
+        nossos servidores para geração da arte. A imagem original não é armazenada após o
+        processamento; apenas a arte gerada é salva.
+      </li>
+      <li>
+        <strong>Personagens criados:</strong> nome, classe, raridade, estatísticas e a arte gerada
+        por IA são armazenados no nosso banco de dados para compor sua coleção.
+      </li>
+      <li>
+        <strong>Histórico de batalhas:</strong> resultado de partidas, pontuação e evolução de
+        personagens são registrados para exibição em rankings e perfil.
+      </li>
+      <li>
+        <strong>Dados de comportamento no App:</strong> eventos como cartas abertas, batalhas
+        iniciadas e feedbacks de diálogos são coletados anonimamente para melhorar a experiência
+        de jogo. Não vendemos esses dados a terceiros.
+      </li>
+      <li>
+        <strong>Dados de compras:</strong> histórico de compras de Fichas ou Spoon Pass é
+        armazenado para controle de saldo. Os dados de pagamento em si são processados pela Apple
+        (App Store) e nunca transitam pelos nossos servidores.
+      </li>
+    </ul>
+
+    <h2>2. Como usamos suas informações</h2>
+    <ul>
+      <li>Criar e manter sua conta e coleção de personagens.</li>
+      <li>Gerar arte de personagens a partir das fotos enviadas.</li>
+      <li>Exibir rankings e histórico de batalhas.</li>
+      <li>Melhorar algoritmos de geração de personagens e equilíbrio do jogo.</li>
+      <li>Cumprir obrigações legais, investigar abusos e garantir a segurança do App.</li>
+    </ul>
+
+    <h2>3. Serviços de terceiros</h2>
+    <p>O App utiliza os seguintes serviços externos:</p>
+    <ul>
+      <li>
+        <strong>OpenAI (api.openai.com):</strong> as fotos e o nome do objeto são enviados à API
+        da OpenAI para geração de imagens e para verificação de conteúdo via Moderation API. O uso
+        dos dados pela OpenAI é regido pela
+        <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">
+          Política de Privacidade da OpenAI</a>.
+      </li>
+      <li>
+        <strong>Supabase:</strong> banco de dados, autenticação e armazenamento de arquivos.
+        Dados hospedados em servidores seguros com criptografia em trânsito (TLS) e em repouso.
+      </li>
+      <li>
+        <strong>Google Sign-In / Apple Sign-In:</strong> autenticação via OAuth. Recebemos apenas
+        o e-mail e nome de exibição com sua autorização.
+      </li>
+    </ul>
+
+    <h2>4. Retenção e exclusão de dados</h2>
+    <p>
+      Você pode excluir sua conta a qualquer momento diretamente no App, em
+      <strong>Perfil → Excluir minha conta</strong>. Ao confirmar, todos os dados
+      associados à sua conta — perfil, personagens, histórico de batalhas e feedbacks — são
+      removidos permanentemente dos nossos servidores em até 30 dias.
+    </p>
+    <p>
+      Dados anonimizados de uso agregado (sem identificação pessoal) podem ser retidos por prazo
+      indeterminado para fins estatísticos.
+    </p>
+
+    <h2>5. Moderação de conteúdo</h2>
+    <p>
+      Todas as fotos enviadas passam por verificação automática via OpenAI Moderation API antes
+      da geração do personagem. Conteúdo que viole nossas diretrizes (imagens adultas, violência
+      gráfica, discurso de ódio, etc.) é recusado automaticamente.
+    </p>
+    <p>
+      Usuários podem denunciar personagens inapropriados diretamente na tela de detalhes do
+      personagem. Denúncias são analisadas por nossa equipe e podem resultar na remoção do conteúdo
+      e suspensão da conta responsável.
+    </p>
+
+    <h2>6. Privacidade de menores</h2>
+    <p>
+      O App é classificado para maiores de 12 anos. Não coletamos intencionalmente dados de
+      crianças menores de 13 anos. Se você acredita que uma criança nos forneceu dados, entre em
+      contato para que possamos removê-los.
+    </p>
+
+    <h2>7. Segurança</h2>
+    <p>
+      Todas as comunicações entre o App e nossos servidores utilizam criptografia TLS/HTTPS.
+      O acesso ao banco de dados é protegido por políticas de segurança em nível de linha (RLS)
+      que garantem que cada usuário acesse apenas seus próprios dados.
+    </p>
+
+    <h2>8. Seus direitos</h2>
+    <p>Você tem direito a:</p>
+    <ul>
+      <li>Acessar os dados que temos sobre você (disponíveis no seu perfil no App).</li>
+      <li>Corrigir informações incorretas entrando em contato conosco.</li>
+      <li>Excluir sua conta e todos os dados associados (via App ou por e-mail).</li>
+      <li>Portabilidade de dados — solicite exportação enviando e-mail para o endereço abaixo.</li>
+    </ul>
+
+    <h2>9. Alterações nesta política</h2>
+    <p>
+      Podemos atualizar esta política periodicamente. Notificaremos você por e-mail ou aviso no
+      App em caso de alterações materiais. O uso continuado do App após as alterações constitui
+      sua aceitação da nova política.
+    </p>
+
+    <h2>10. Termos de Uso</h2>
+    <p>Ao usar o App, você concorda em:</p>
+    <ul>
+      <li>Não fotografar conteúdo ilegal, adulto ou que viole direitos de terceiros.</li>
+      <li>Não tentar burlar os sistemas de moderação ou abusar da geração de imagens.</li>
+      <li>Não revender ou redistribuir personagens gerados de forma que infrinja nossos direitos.</li>
+      <li>
+        Aceitar que a geração de imagens por IA pode produzir resultados inesperados e que não
+        garantimos a precisão ou qualidade artística do conteúdo gerado.
+      </li>
+    </ul>
+    <p>
+      Reservamo-nos o direito de suspender ou encerrar contas que violem estes termos, sem aviso
+      prévio em casos graves.
+    </p>
+
+    <h2>Contato</h2>
+    <p>
+      Dúvidas, solicitações de dados ou denúncias:<br />
+      <a href="mailto:gabrielleitemoreira@gmail.com">gabrielleitemoreira@gmail.com</a>
+    </p>
+
+    <footer>
+      <p>© 2026 Garagem · This Is A Spoon · Todos os direitos reservados</p>
+    </footer>
+  </div>
+</body>
+</html>

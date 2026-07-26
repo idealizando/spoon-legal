@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>This Is A Spoon</title>
+  <style>
+    :root {
+      --bg: #0d0d14;
+      --surface: #13131f;
+      --border: #2a2a3d;
+      --text: #e0e0f0;
+      --muted: #8888aa;
+      --accent: #a259ff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 480px; width: 100%; text-align: center; }
+    h1 { font-size: 2rem; color: var(--accent); margin-bottom: 0.25rem; }
+    .tagline { color: var(--muted); font-size: 0.9rem; margin-bottom: 2.5rem; }
+    .links { display: flex; flex-direction: column; gap: 0.75rem; }
+    .links a {
+      display: block;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1rem;
+      color: var(--text);
+      text-decoration: none;
+      transition: border-color 0.2s;
+    }
+    .links a:hover { border-color: var(--accent); }
+    .links strong { color: var(--accent); display: block; margin-bottom: 0.15rem; }
+    .links span { color: var(--muted); font-size: 0.85rem; }
+    footer { margin-top: 3rem; font-size: 0.8rem; color: var(--muted); }
+    footer a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🥄 This Is A Spoon</h1>
+    <p class="tagline">Fotografe qualquer coisa. Batalhe com tudo.</p>
+
+    <div class="links">
+      <a href="./support.html">
+        <strong>Suporte</strong>
+        <span>Perguntas frequentes e contato</span>
+      </a>
+      <a href="./privacy.html">
+        <strong>Privacidade &amp; Termos</strong>
+        <span>Como tratamos seus dados</span>
+      </a>
+    </div>
+
+    <footer>
+      <p>
+        Contato:
+        <a href="mailto:gabrielleitemoreira@gmail.com">gabrielleitemoreira@gmail.com</a><br />
+        © 2026 Garagem
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
