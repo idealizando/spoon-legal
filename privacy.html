@@ -79,13 +79,17 @@
       </li>
       <li>
         <strong>Fotos capturadas pelo App:</strong> quando você fotografa um objeto para criar um
-        personagem, a imagem é enviada temporariamente para a API da OpenAI (veja seção 3) e para
-        nossos servidores para geração da arte. A imagem original não é armazenada após o
-        processamento; apenas a arte gerada é salva.
+        personagem, a imagem é enviada para a API da OpenAI (veja seção 3), que a usa para gerar a
+        arte do personagem. <strong>A foto original não é armazenada em nossos servidores</strong> —
+        ela é usada apenas durante a geração e descartada em seguida. O que guardamos é somente a
+        arte gerada por IA.
       </li>
       <li>
         <strong>Personagens criados:</strong> nome, classe, raridade, estatísticas e a arte gerada
-        por IA são armazenados no nosso banco de dados para compor sua coleção.
+        por IA são armazenados no nosso banco de dados para compor sua coleção. As imagens ficam
+        em armazenamento privado: não são acessíveis publicamente na internet e só podem ser
+        exibidas para usuários autenticados do App, por meio de links temporários — por exemplo,
+        para mostrar sua carta ao adversário durante uma batalha.
       </li>
       <li>
         <strong>Histórico de batalhas:</strong> resultado de partidas, pontuação e evolução de
